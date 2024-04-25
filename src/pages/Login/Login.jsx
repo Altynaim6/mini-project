@@ -68,10 +68,12 @@ const Login = () => {
                     </p>
                 )}
 
-            
                 {/*<p>{errAlert}</p>*/}
                 <button type='submit' className={classes.submitButton}>Submit</button>
-                <p className="message">Not registered? <NavLink to="/register" style={{ color: 'green', textDecoration: 'none' }}>Create an account</NavLink></p>
+                <p className="message">
+                    <NavLink to="/register" style={{ color: 'green', textDecoration: 'none', margin: '10px' }}>Sign up</NavLink>
+                    <NavLink to="/reset" style={{ color: 'gray', textDecoration: 'none', margin: '10px' }}>Forgot password?</NavLink>
+                </p>
             </form>
         </div>
     );
